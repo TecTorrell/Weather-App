@@ -6,7 +6,7 @@
 }
 
 header{
-    background-image: linear-gradient( rgba(4, 9, 20, 0.1), rgba(4, 9, 20, 1)), url(./dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+    background-image: linear-gradient( rgba(4, 9, 20, 0.1), rgba(4, 9, 20, 1)), url(../dawid-zawila--G3rw6Y02D0-unsplash.jpg);
     background-size: cover;
     height: 100vh;
     position: relative;
