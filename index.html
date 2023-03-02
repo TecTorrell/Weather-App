@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="header">
+                <h1>🌦️Weather App</h1>
+            </nav>
+
+            <div class="weather__details">
+                <div class="location">
+                    <input type="text" placeholder="Search for the weather in your city." class="search__bar" required>
+                    <button>Search</button> <br>
+                    <span class="error__message hidden">Please enter your city!</span>
+                </div>
+
+                <p class="detail__one">
+                    <span class="weather__location">Weather in <span class="city">your city</span>.</span> <br>
+                    <span class="degree">_ _</span>
+                </p>
+
+                <p class="detail__two">
+                    🟠 <span class="description">_ _</span><br>
+                    <span class="bold">Humidity:</span> _ _ <br>
+                    <span class="bold">Wind Speed:</span> <span class="value">_ _</span>
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <script src="./script.js"></script>
+</body>
+</html>

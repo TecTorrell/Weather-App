@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: linear-gradient( rgba(4, 9, 20, 0.1), rgba(4, 9, 20, 1)), url(/dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 25px;
+}
+
+.weather__details{
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: block;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-top: 10rem;
+}
+
+.location input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: 3rem;
+    width: 25rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    color: white;
+    font-size: 17px;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.location input::placeholder{
+    font-size: 17px;
+    color: rgb(157, 157, 157);
+}
+
+.error__message{
+    color: red;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.hidden{
+    display: none;
+}
+
+.city{
+    text-transform: capitalize;
+}
+
+.weather__details button{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 17px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+.degree{
+    font-size: 65px;
+}
+
+.weather__location{
+    font-size: 40px;
+}
+
+.detail__one{
+    line-height: 4rem;
+}
+
+.detail__two{
+    line-height: 2.5rem;
+    font-size: 20px;
+}
+
+.bold{
+    font-weight: 700;
+}
