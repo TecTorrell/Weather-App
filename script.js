@@ -4,10 +4,8 @@ const description = document.querySelector('.description')
 const windSpeedValue = document.querySelector('.value')
 const errorMessage = document.querySelector('.error__message')
 const hidden = document.querySelector('hidden')
-
-
-
-
+const emoji = document.querySelector('.emoji')
+var descriptionText = ""
 
 searchButton.addEventListener('click', ()=>{
     let searchBar = document.querySelector('input').value
@@ -26,6 +24,40 @@ searchButton.addEventListener('click', ()=>{
             degree.innerText = data.temperature
             description.innerText = data.description
             windSpeedValue.innerText = data.wind
+            descriptionText = data.description.toLowerCase()
+            if (descriptionText =="clear"){
+                emoji.innerText = "⭐"
+            }
+            else if (descriptionText =="sunny"){
+                emoji.innerText = "☀️"
+            }
+            else if (descriptionText =="partly cloudy"){
+                emoji.innerText = "☁️"
+            }
+            else if (descriptionText == "light rain"){
+                emoji.innerText = "🌧️"
+            }
+            else if (descriptionText == "light rain shower"){
+                emoji.innerText = "☔"
+            }
+            else if (descriptionText == "light snow shower"){
+                emoji.innerText = "❄️"
+            }
+            else if (descriptionText == "patchy rain possible"){
+                emoji.innerText = "☔"
+            }
+            else if (descriptionText == "heavy rain"){
+                emoji.innerText = "⛈️"
+            }
+            else if (descriptionText == "heavy snow"){
+                emoji.innerText = "🌨️"
+            }
+            else if (descriptionText == "thunderstorm"){
+                emoji.innerText = "⛈️"
+            }
+            else {
+                emoji.innerText = "🟠"
+            }
         })
     
     }
