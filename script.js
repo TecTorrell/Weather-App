@@ -25,40 +25,42 @@ searchButton.addEventListener('click', ()=>{
             description.innerText = data.description
             windSpeedValue.innerText = data.wind
             descriptionText = data.description.toLowerCase()
-            if (descriptionText =="clear"){
+
+            switch (descriptionText){
+            case "clear":
                 emoji.innerText = "⭐"
-            }
-            else if (descriptionText =="sunny"){
+                break 
+            case "sunny":
                 emoji.innerText = "☀️"
-            }
-            else if (descriptionText =="partly cloudy"){
+                break
+            case "partly cloudy":
                 emoji.innerText = "☁️"
-            }
-            else if (descriptionText == "light rain"){
+                break
+            case "light rain":
                 emoji.innerText = "🌧️"
-            }
-            else if (descriptionText == "light rain shower"){
+                break
+            case "light rain shower":
                 emoji.innerText = "☔"
-            }
-            else if (descriptionText == "light snow shower"){
+                break
+            case "light snow shower":
                 emoji.innerText = "❄️"
-            }
-            else if (descriptionText == "patchy rain possible"){
+                break
+            case "patchy rain possible":
                 emoji.innerText = "☔"
-            }
-            else if (descriptionText == "heavy rain"){
+                break
+            case "heavy rain":
                 emoji.innerText = "⛈️"
-            }
-            else if (descriptionText == "heavy snow"){
+                break
+            case "heavy snow":
                 emoji.innerText = "🌨️"
-            }
-            else if (descriptionText == "thunderstorm"){
+                break
+            case "thunderstorm":
                 emoji.innerText = "⛈️"
-            }
-            else {
+                break
+            default:
                 emoji.innerText = "🟠"
-            }
-        })
+                
+        }})
     
     }
 
