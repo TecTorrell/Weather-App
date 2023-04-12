@@ -66,6 +66,19 @@ searchButton.addEventListener('click', ()=>{
 
 })    
 
+// Assume that the weatherData variable contains the data returned by the API call
+if (typeof degree === "undefined" || typeof description === "undefined" || typeof windSpeedValue === "undefined" || typeof descriptionText === "undefined") {
+//   console.log("Error: No weather data available for this location.");
+    
+            degree.innerText = "Data could not be fetched"
+            description.innerText = "Data could not be fetched"
+            windSpeedValue.innerText = "Data could not be fetched"
+            descriptionText = "Data could not be fetched"
+} else {
+    
+}
+
+
 
 
 
